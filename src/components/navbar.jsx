@@ -18,17 +18,11 @@ const Navbar = () => {
 
                 {/* Nav Links - Desktop */}
                 <ul className="hidden md:flex gap-8 font-medium">
-                    <li className="hover:text-yellow-400 cursor-pointer">Home</li>
-                    <li className="hover:text-yellow-400 cursor-pointer">Portfolio</li>
-                    <li className="hover:text-yellow-400 cursor-pointer">Testimonial</li>
-                    <li className="hover:text-yellow-400 cursor-pointer">About</li>
-                </ul>
-
-                {/* Right Side Icons */}
-                <div className="hidden md:flex items-center gap-6">
-                    <FaGlobe className="cursor-pointer hover:text-yellow-400" />
-                    <FaLinkedinIn className="cursor-pointer hover:text-yellow-400" />
-                </div>
+                    <li className="hover:text-yellow-400 cursor-pointer"><a href="#services">Services</a></li>
+                    <li className="hover:text-yellow-400 cursor-pointer"><a href="#experience">Experience</a></li>
+                    <li className="hover:text-yellow-400 cursor-pointer"> <a href="#skills">Skills</a></li>
+                    <li className="hover:text-yellow-400 cursor-pointer"><a href="#workflow">Workflow</a></li>
+                </ul>        
 
                 {/* Mobile Hamburger */}
                 <button
@@ -48,12 +42,6 @@ const Navbar = () => {
                         <li className="hover:text-yellow-400 cursor-pointer">Testimonial</li>
                         <li className="hover:text-yellow-400 cursor-pointer">About</li>
                     </ul>
-
-                    {/* Social icons in mobile menu */}
-                    <div className="flex justify-center gap-6 mt-4">
-                        <FaGlobe className="cursor-pointer hover:text-yellow-400" />
-                        <FaLinkedinIn className="cursor-pointer hover:text-yellow-400" />
-                    </div>
                 </div>
             )}
         </nav>
